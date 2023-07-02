@@ -5,7 +5,9 @@ header{
     padding: 10px;
 }
 
-
+input:focus{
+   border: 1px solid blue;
+}
 #cadastro-valor{
     display: none;
     position: fixed;
@@ -49,23 +51,23 @@ header{
     text-align: center;
     vertical-align:middle;
  }
+ .btn-enviar{
+   background-color:azure;
+ }
 
  .btn-sair{
     display: flex;
     justify-content: end;
-    padding: 10px;
-
+    padding: 5px;
  }
- .btn-sair button{
-    width: auto;
-    height: 5vh;
-    margin-bottom: 2px;
-    display: flex;
-
-
-    
- }
- 
+#sair{
+   cursor: pointer;
+   
+}
+#sair:hover{
+   background-color: red;
+   box-shadow: 1px 1px 1px 1px red;
+}
  table{
     width: 100%;
     display: flex;
@@ -74,9 +76,18 @@ header{
  }
 
  tr{
+
     border: 1px solid black;
     text-align: center;
+
  }
+ td form{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-block-end: 0;
+ }
+
  td{
     width: 200px;
  }
@@ -100,4 +111,9 @@ header{
    align-items: center;
    flex-direction: row;
  }
+
+button{
+  border: 0;
+  background-color: transparent;
+}
 
